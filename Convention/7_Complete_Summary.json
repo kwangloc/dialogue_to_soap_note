@@ -1,0 +1,89 @@
+{
+  "utterances": {
+    "U1": "Doctor: Hello, I understand that you're a 7-year-old boy with congenital bilateral sensorineural deafness, and you've had a failed right cochlear implant. Is that correct?",
+    "U2": "Patient: Yes, doctor.",
+    "U3": "Doctor: We recently conducted a Magnetic Resonance Imaging (MRI) before transferring you to the operating theatre for an ABI insertion. During the MRI, your airway was secured with a size 5.5 mm internal-diameter uncuffed ETT. Did you experience any discomfort during the MRI?",
+    "U4": "Patient: No, it was okay.",
+    "U5": "Doctor: Great. Now, during the surgery, we will be performing intraoperative neurophysiology monitoring, which includes brainstem auditory sensory evoked potentials, brainstem mapping of CN IX, X, XI, XII and their motor nuclei, and corticobulbar tract motor-evoked potential (MEP). This will help us monitor your nerves during the procedure.",
+    "U6": "Patient: Okay, doctor.",
+    "U7": "Doctor: Our anesthesia team will be responsible for the lead placement for CN IX, X, XI, XII. We will use a 32 mm by 29 mm laryngeal electrode for CN X monitoring (Fig.). To ensure optimal electrode placement on the tracheal tube, we positioned you as intended for surgery (right lateral) and identified the depth of ETT corresponding to the laryngeal inlet using a C-MAC Laryngoscope.",
+    "U8": "Patient: Hmm, alright.",
+    "U9": "Doctor: This corresponded to 6 cm at vocal cords (15 cm at lips). We then prepared a new #5.5 uncuffed ETT with the laryngeal electrodes (Fig.) and re-intubated you, in keeping with the measurements.",
+    "U10": "Patient: Okay, got it.",
+    "U11": "Doctor: For CN IX placement, we put a pin electrode on the ipsilateral soft palate. For CN XII, we placed electrodes on the anterior tongue.",
+    "U12": "Patient: I see.",
+    "U13": "Doctor: To stabilize the tracheal tube, we used rolled up gauzes on either side of it (Fig.), which also acted as a bite block.",
+    "U14": "Patient: Alright, doctor.",
+    "U15": "Doctor: During the surgery, we will administer Total Intravenous Anesthesia (TIVA) which includes propofol (Paedsfusor Target Control Infusion, target plasma concentration 3.5–5.0 mcg/ml) and remifentanil (0.08–0.3 mcg/kg/min).",
+    "U16": "Patient: Will I feel any pain during the surgery?",
+    "U17": "Doctor: No, the anesthesia will ensure that you remain comfortable and pain-free throughout the procedure.",
+    "U18": "Patient: That's good to know.",
+    "U19": "Doctor: After the surgery, we will closely monitor your recovery and provide any necessary follow-up care. It's important that you follow our instructions to ensure the best possible outcome.",
+    "U20": "Patient: Yes, doctor. I will.",
+    "U21": "Doctor: Great. If you or your family have any questions or concerns, please don't hesitate to reach out to us.",
+    "U22": "Patient: Thank you, doctor. We appreciate your help."
+  },
+  "S": [
+    {
+      "sentence_idx": "0",
+      "sentence_text": "The patient is a 7-year-old boy with congenital bilateral sensorineural deafness and a failed right cochlear implant.",
+      "utterance_id": "U1"
+    },
+    {
+      "sentence_idx": "1",
+      "sentence_text": "He reports no discomfort during the MRI and no pain during the surgery.",
+      "utterance_id": "U3"
+    }
+  ],
+  "O": [
+    {
+      "sentence_idx": "0",
+      "sentence_text": "During the MRI, the patient's airway was secured with a size 5.5 mm internal-diameter uncuffed ETT.",
+      "utterance_id": "U3"
+    },
+    {
+      "sentence_idx": "1",
+      "sentence_text": "During the surgery, intraoperative neurophysiology monitoring will include brainstem auditory sensory evoked potentials, brainstem mapping of CN IX, X, XI, XII, and their motor nuclei, and corticobulbar tract motor-evoked potential (MEP).",
+      "utterance_id": "U5"
+    },
+    {
+      "sentence_idx": "2",
+      "sentence_text": "The patient will be treated with Total Intravenous Infusion (TIVA) including propofol (Paedsfusor Target Control Infusion, target plasma concentration 3.5–5.0g/ml) and remifentanil (0.08–0.3g/kg/min).",
+      "utterance_id": "U15"
+    }
+  ],
+  "A": [
+    {
+      "sentence_idx": "0",
+      "sentence_text": "The primary diagnosis is congenital bilateral sensorineural deafness, secondary to a failed right cochlear implant.",
+      "utterance_id": "U1"
+    },
+    {
+      "sentence_idx": "1",
+      "sentence_text": "The patient's airway was secured with a size 5.5 mm internal-diameter uncuffed ETT.",
+      "utterance_id": "U3"
+    },
+    {
+      "sentence_idx": "2",
+      "sentence_text": "The patient will undergo surgery for an ABI insertion.",
+      "utterance_id": "U1"
+    },
+    {
+      "sentence_idx": "3",
+      "sentence_text": "The anesthesia will ensure that the patient remains comfortable and pain-free during the procedure.",
+      "utterance_id": "U17"
+    }
+  ],
+  "P": [
+    {
+      "sentence_idx": "0",
+      "sentence_text": "The patient will be treated with Total Intravenous Infusion (TIVA) including propofol (Paedsfusor Target Control Infusion, target plasma concentration 3.5–5.0g/ml) and remifentanil (0.08–0.3g/kg/min).",
+      "utterance_id": "U15"
+    },
+    {
+      "sentence_idx": "1",
+      "sentence_text": "Post-operative care will include monitoring of the patient's nerves and the patient's response to the procedure.",
+      "utterance_id": "U15"
+    }
+  ]
+}
