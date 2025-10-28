@@ -4,13 +4,10 @@ A research repository to convert clinical dialogues into structured SOAP notes u
 
 ## Table of contents
 - [Overview](#overview)
-- [Repository structure](#repository-structure)
 - [Quick start](#quick-start)
+- [Repository structure](#repository-structure)
 - [Data / file conventions](#data--file-conventions)
 - [Notebooks & key files](#notebooks--key-files)
-- [Diagrams](#diagrams)
-- [Contributing](#contributing)
-- [License & contact](#license--contact)
 
 ## Overview
 This repo implements an end-to-end pipeline that:
@@ -38,10 +35,11 @@ Notes:
 - [RoleClassifier/](RoleClassifier/) : role-classifier notebooks and inference code.
 - [Speech2Text/](Speech2Text/) : S2T models & utilities (audio preprocessing, whisper configs).
 - [Summarization/](Summarization/) : fine-tuning, datasets, and evaluation for clinical summarization models.
+  - Example finetuning notebooks: 
+    - [Summarization/3_Fine_Tune_LLM/bart/bio_bart/biobart_lora_1.ipynb](Summarization/3_Fine_Tune_LLM/bart/bio_bart/biobart_lora_1.ipynb)
   - Example evaluation/test outputs:
-    - [Summarization/3_Fine_Tune_LLM/bart/bio_bart/test_soap_50.csv](Summarization/3_Fine_Tune_LLM/bart/bio_bart/test_soap_50.csv)
     - [Summarization/3_Fine_Tune_LLM/bart/bio_bart/eval_test_soap_50.csv](Summarization/3_Fine_Tune_LLM/bart/bio_bart/eval_test_soap_50.csv)
-  - Example training notebooks: [Summarization/3_Fine_Tune_LLM/bart/bio_bart/biobart_lora_1.ipynb](Summarization/3_Fine_Tune_LLM/bart/bio_bart/biobart_lora_1.ipynb)
+
 - [assets/diagrams/files/](assets/diagrams/files/) : architecture and DB diagrams.
 
 ## Data & file conventions
@@ -55,13 +53,6 @@ Notes:
   - [RoleClassifier/Role_Classifier_Bert_Base_Uncased_3.ipynb](RoleClassifier/Role_Classifier_Bert_Base_Uncased_3.ipynb)
   - [RoleClassifier/bert_uncased_infer_3_FINAL.ipynb](RoleClassifier/bert_uncased_infer_3_FINAL.ipynb)
   - [RoleClassifier/Role_Classifier_Rule_Based_FINAL.ipynb](RoleClassifier/Role_Classifier_Rule_Based_FINAL.ipynb)
-- Summarization experiments and evaluation CSVs: [Summarization/3_Fine_Tune_LLM/bart/bio_bart/](Summarization/3_Fine_Tune_LLM/bart/bio_bart/)
+- Summarization experiments and evaluation CSVs: 
+  - [Summarization/3_Fine_Tune_LLM/bart/bio_bart/](Summarization/3_Fine_Tune_LLM/bart/bio_bart/)
 
-## Diagrams
-Architectural diagrams and sequence diagrams are stored under:
-- [assets/diagrams/files/general2.drawio](assets/diagrams/files/general2.drawio)
-- [assets/diagrams/files/general.drawio](assets/diagrams/files/general.drawio)
-- [assets/diagrams/files/db2.drawio](assets/diagrams/files/db2.drawio)
-- [assets/diagrams/files/sequence.drawio](assets/diagrams/files/sequence.drawio)
-
-Open these with draw.io.
