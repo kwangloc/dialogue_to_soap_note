@@ -30,17 +30,17 @@ Notes:
 - Hardware: fine-tuning notebooks expect GPU resources (A100/T4/L4 referenced in notebooks).
 
 ## Repository structure
-- [./Convention](Convention/) : transcription and annotation formats used across the project (example: transcripts, combined transcripts, and final summaries).
-- [./Pipeline](Pipeline/) : main orchestration notebooks and pipeline code.
-- [./RoleClassifier](RoleClassifier/) : role-classifier notebooks and inference code.
-- [./Speech2Text](Speech2Text/) : S2T models & utilities (audio preprocessing, whisper configs).
-- [./Summarization](Summarization/) : fine-tuning, datasets, and evaluation for clinical summarization models.
+- [/Convention](Convention/) : transcription and annotation formats used across the project (example: transcripts, combined transcripts, and final summaries).
+- [/Pipeline](Pipeline/) : main orchestration notebooks and pipeline code.
+- [/RoleClassifier](RoleClassifier/) : role-classifier notebooks and inference code.
+- [/Speech2Text](Speech2Text/) : S2T models & utilities (audio preprocessing, whisper configs).
+- [/Summarization](Summarization/) : fine-tuning, datasets, and evaluation for clinical summarization models.
   - Example finetuning notebooks: 
     - [Summarization/3_Fine_Tune_LLM/bart/bio_bart/biobart_lora_1.ipynb](Summarization/3_Fine_Tune_LLM/bart/bio_bart/biobart_lora_1.ipynb)
   - Example evaluation/test outputs:
     - [Summarization/3_Fine_Tune_LLM/bart/bio_bart/eval_test_soap_50.csv](Summarization/3_Fine_Tune_LLM/bart/bio_bart/eval_test_soap_50.csv)
 
-- [./assets/diagrams/files](assets/diagrams/files/) : architecture and DB diagrams.
+- [/assets/diagrams/files](assets/diagrams/files/) : architecture and DB diagrams.
 
 ## Data & file conventions
 - Transcripts use Whisper-derived timestamps and token-level times. See [Convention/1_Transcript_Whisper.json](Convention/1_Transcript_Whisper.json).
