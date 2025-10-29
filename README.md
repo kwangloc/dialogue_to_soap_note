@@ -31,7 +31,7 @@ This repo implements an end-to-end pipeline that:
 - SOAP-note generation:
   - Fine-tuned with LoRA: BioBART, Pegasus-PubMed, Pegasus-Xsum
   - Prompt engineering: LLaMA-3 (8B instruct),  Omihealth (8B)
-
+- Hardware: fine-tuning notebooks expect GPU resources (A100/T4/L4 referenced in notebooks).
 
 ## Quick start
 1. Install Python environment (recommend virtualenv / conda) and Jupyter/Colab.
@@ -41,10 +41,6 @@ This repo implements an end-to-end pipeline that:
    - [Convention/1_Transcript_Whisper.json](Convention/1_Transcript_Whisper.json)
    - [Convention/4_Complete_Transcript.json](Convention/4_Complete_Transcript.json)
 4. Role classification and summarization experiments are available as notebooks under [RoleClassifier/](RoleClassifier/) and [Summarization/](Summarization/).
-
-Notes:
-- Many notebooks include Colab drive mount steps. Adapt these cells if running locally.
-- Hardware: fine-tuning notebooks expect GPU resources (A100/T4/L4 referenced in notebooks).
 
 ## Repository structure
 - [/Convention](Convention/) : transcription and annotation formats used across the project (example: transcripts, combined transcripts, and final summaries).
@@ -59,3 +55,4 @@ Notes:
   - Example evaluation/test outputs: [Summarization/3_Fine_Tune_LLM/bart/bio_bart/eval_test_soap_50.csv](Summarization/3_Fine_Tune_LLM/bart/bio_bart/eval_test_soap_50.csv)
 
 - [/assets/diagrams/files](assets/diagrams/files/) : architecture and DB diagrams.
+- Notes: Many notebooks include Colab drive mount steps. Adapt these cells if running locally.
