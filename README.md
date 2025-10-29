@@ -16,9 +16,9 @@ This repo implements an end-to-end pipeline that:
 3. Classifies utterance roles (Doctor / Patient / Other).
 4. Generates structured SOAP notes (Summarization).
 
-![System Overview](assets\diagrams\system_overview.png)
+![System Overview](assets/diagrams/system_overview.png)
 
-![Dataset pipeline](assets\diagrams\data_pipeline.png)
+![Dataset pipeline](assets/diagrams/data_pipeline.png)
 
 ## Quick start
 1. Install Python environment (recommend virtualenv / conda) and Jupyter/Colab.
