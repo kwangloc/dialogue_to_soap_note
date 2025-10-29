@@ -6,6 +6,7 @@ See the demo here: [thesis-fe-gray.vercel.app](https://thesis-fe-gray.vercel.app
 
 ## Table of contents
 - [Overview](#overview)
+- [Models used](#models-used)
 - [Quick start](#quick-start)
 - [Repository structure](#repository-structure)
 - [Data / file conventions](#data--file-conventions)
@@ -21,6 +22,18 @@ This repo implements an end-to-end pipeline that:
 ![System Overview](assets/diagrams/system_overview.png)
 
 ![Dataset pipeline](assets/diagrams/data_pipeline.png)
+
+## Models used
+- Transcription:
+  - OpenAI Whisper (large-v3) 
+- Speaker diarization:
+  - pyannote.audio (Pytorch-based framework)
+- Role classification:
+  - Bert-base-uncased
+- SOAP-note generation:
+  - Fine-tuned with LoRA: BioBART, Pegasus-PubMed, Pegasus-Xsum
+  - Prompt engineering: LLaMA-3 (8B instruct),  Omihealth (8B)
+
 
 ## Quick start
 1. Install Python environment (recommend virtualenv / conda) and Jupyter/Colab.
