@@ -9,8 +9,6 @@ See the demo here: [thesis-fe-gray.vercel.app](https://thesis-fe-gray.vercel.app
 - [Models used](#models-used)
 - [Quick start](#quick-start)
 - [Repository structure](#repository-structure)
-- [Data / file conventions](#data--file-conventions)
-- [Notebooks & key files](#notebooks--key-files)
 
 ## Overview
 This repo implements an end-to-end pipeline that:
@@ -50,28 +48,14 @@ Notes:
 
 ## Repository structure
 - [/Convention](Convention/) : transcription and annotation formats used across the project (example: transcripts, combined transcripts, and final summaries).
+  - Transcripts along with timestamps and token-level times. See [Convention/1_Transcript_Whisper.json](Convention/1_Transcript_Whisper.json).
+  - Combined utterance-level transcripts. See [Convention/4_Complete_Transcript.json](Convention/4_Complete_Transcript.json).
+  - Final structured SOAP notes. See [Convention/7_Complete_Summary.json](Convention/7_Complete_Summary.json).
 - [/Pipeline](Pipeline/) : main orchestration notebooks and pipeline code.
-- [/RoleClassifier](RoleClassifier/) : role-classifier notebooks and inference code.
+- [/RoleClassifier](RoleClassifier/) : role-classifier notebooks.
 - [/Speech2Text](Speech2Text/) : S2T models & utilities (audio preprocessing, whisper configs).
-- [/Summarization](Summarization/) : fine-tuning, datasets, and evaluation for clinical summarization models.
-  - Example finetuning notebooks: 
-    - [Summarization/3_Fine_Tune_LLM/bart/bio_bart/biobart_lora_1.ipynb](Summarization/3_Fine_Tune_LLM/bart/bio_bart/biobart_lora_1.ipynb)
-  - Example evaluation/test outputs:
-    - [Summarization/3_Fine_Tune_LLM/bart/bio_bart/eval_test_soap_50.csv](Summarization/3_Fine_Tune_LLM/bart/bio_bart/eval_test_soap_50.csv)
+- [/Summarization](Summarization/) : fine-tuning and evaluation for clinical summarization models.
+  - Example finetuning notebooks: [Summarization/3_Fine_Tune_LLM/bart/bio_bart/biobart_lora_1.ipynb](Summarization/3_Fine_Tune_LLM/bart/bio_bart/biobart_lora_1.ipynb)
+  - Example evaluation/test outputs: [Summarization/3_Fine_Tune_LLM/bart/bio_bart/eval_test_soap_50.csv](Summarization/3_Fine_Tune_LLM/bart/bio_bart/eval_test_soap_50.csv)
 
 - [/assets/diagrams/files](assets/diagrams/files/) : architecture and DB diagrams.
-
-## Data & file conventions
-- Transcripts use Whisper-derived timestamps and token-level times. See [Convention/1_Transcript_Whisper.json](Convention/1_Transcript_Whisper.json).
-- Combined utterance-level transcripts live in [Convention/4_Complete_Transcript.json](Convention/4_Complete_Transcript.json).
-- Final structured SOAP notes are in [Convention/7_Complete_Summary.json](Convention/7_Complete_Summary.json).
-
-## Notebooks & key files
-- Pipeline runner: [Pipeline/pipeline_FINAL.ipynb](Pipeline/pipeline_FINAL.ipynb)
-- Role classifier (BERT-based and rule-based): files in [RoleClassifier/](RoleClassifier/)
-  - [RoleClassifier/Role_Classifier_Bert_Base_Uncased_3.ipynb](RoleClassifier/Role_Classifier_Bert_Base_Uncased_3.ipynb)
-  - [RoleClassifier/bert_uncased_infer_3_FINAL.ipynb](RoleClassifier/bert_uncased_infer_3_FINAL.ipynb)
-  - [RoleClassifier/Role_Classifier_Rule_Based_FINAL.ipynb](RoleClassifier/Role_Classifier_Rule_Based_FINAL.ipynb)
-- Summarization experiments and evaluation CSVs: 
-  - [Summarization/3_Fine_Tune_LLM/bart/bio_bart/](Summarization/3_Fine_Tune_LLM/bart/bio_bart/)
-
