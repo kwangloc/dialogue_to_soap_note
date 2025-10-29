@@ -2,6 +2,8 @@
 
 A research repository to convert clinical dialogues into structured SOAP notes using a pipeline of speech-to-text, diarization, role classification, and summarization (fine-tuned LLMs).
 
+See the demo here: [thesis-fe-gray.vercel.app](https://thesis-fe-gray.vercel.app/)
+
 ## Table of contents
 - [Overview](#overview)
 - [Quick start](#quick-start)
